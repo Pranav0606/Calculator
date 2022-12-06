@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="utilities.css">
+  <title>Calculator</title>
+</head>
+<body>
+  <h1 class="title">
+    Calculator
+  </h1>
+  <div class="flex flexCenter mainBox">
+    <div class="calci flex">
+      <div class="display">
+        <input type="text" oninput="calc()" id="display" value="00">
+      </div>
+      <div class="buttons">
+
+        
+        <div class="row flex">
+          <button onclick="clearScr()">C</button>
+          <button onclick="remove()">X</button>
+          <button onclick="add('%')">%</button>
+          <button onclick="add('/')">/</button>
+        </div>
+
+
+        <div class="row flex">
+          <button onclick="add('7')">7</button>
+          <button onclick="add('8')">8</button>
+          <button onclick="add('9')">9</button>
+          <button onclick="add('*')">*</button>
+        </div>
+
+        <div class="row flex">
+          <button onclick="add('4')">4</button>
+          <button onclick="add('4')">5</button>
+          <button onclick="add('6')">6</button>
+          <button onclick="add('+')">+</button>
+        </div>
+
+        <div class="row flex">
+          <button onclick="add('1')">1</button>
+          <button onclick="add('2')">2</button>
+          <button onclick="add('3')">3</button>
+          <button onclick="add('-')">-</button>
+        </div>
+        <div class="row flex">
+          <button onclick="add('.')">.</button>
+          <button onclick="add('0')">0</button>
+          <button onclick="calc()">=</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<!-- <i class="fas fa-cloud-sun-rain    "></i> -->
+<script src="script.js"></script>
+</html>
